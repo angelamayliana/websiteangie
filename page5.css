@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nav-container {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+.nav-flex label,#hamburger {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+}nav ul li a:hover {
+    background-color: darkgray;
+    transition: all 0.3s;
+}
+.nav-brand h2 {
+    margin: 14px 0 0 10px;
+    color: goldenrod; 
+    font-style: oblique;
+}
+#hero-container {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.text {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.button {
+    text-decoration: 0;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #36454F;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}   
+.button:hover {
+    background-color:black;
+    color: var(--cyan);
+}
+main {
+width: 80%;
+margin: auto;
+}
+
+/* Education */
+#education h1 {
+    color: whitesmoke;
+    background-color: #203030;
+    text-align: center;
+    margin-top: 80px;
+}
+#education .education-description {
+    text-align: center;
+    color: var(--dark);
+}
+.education-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto;
+}
+.education-image,about-text{
+    width: 50%;
+    margin: 14px;
+}
+.education-image img {
+    width: 70%;
+    object-fit: cover;
+}
